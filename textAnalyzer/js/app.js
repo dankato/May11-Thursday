@@ -23,6 +23,14 @@ function uniqueWord(arr){
 		}
 	}
 	return uniqueArr.length;
+	//return arr.filter((el, index, arr2)=> arr2.indexOf(el)===index).length;
+	// const uniqueArr = arr.filter(function(el,index,arr2){return arr2.indexOf(el)===index})
+	//const numOfUniqueWords = uniqueArr.length;
+	//return numOfUniqueWords;
+	
+	//Sample
+	//var list = [1,2,3,4,1,1,1];
+	//list = list.filter((x, i, a) => a.indexOf(x) == i); //=> [1,2,3,4]
 }
 function avgWordLen(arr){
 	return Math.floor((arr.map(el=>el.length).reduce((acc,val)=> acc+val))/(arr.length)*100)/100;
